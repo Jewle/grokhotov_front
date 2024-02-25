@@ -1,0 +1,21 @@
+<div class="book-card">
+  <div class="book-card__picture">
+    <img [src]="bookData['thumbnailUrl']" alt="">
+  </div>
+  <div class="book-card__prices">
+    <p class="book-card__old-price">1200</p>
+    <p class="book-card__new-price">780</p>
+  </div>
+  <div class="book-card__info">
+    <p class="book-card__title">{{bookData.title}}</p>
+    <p class="book-card__author">{{bookData.authors[0]}}</p>
+    <div class="book-card__hidden-authors">
+      <label for="book-card__toggler" href="#" class="book-card__show-authors">Ещё</label>
+      <input id="book-card__toggler" type="checkbox" class="book-card__toggler">
+      <ul>
+        <li>Иван Иванов</li>
+        <li>Степан Степанов</li>
+      </ul>
+    </div>
+  </div>
+</div>
